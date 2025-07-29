@@ -2,10 +2,10 @@ cask "requests-and-offers" do
   version "0.1.0-alpha.5"
   
   if Hardware::CPU.arm?
-    sha256 :no_check  # Will be updated when DMGs are available
+    sha256 "5e7ed10e17c3e7e6f237bcb4e8c0b083ac0eec3cbbb3eebf5d943ccc72c375bc"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 :no_check  # Will be updated when DMGs are available
+    sha256 "8ef1cd72c1155a4b68dfe5a1f628f77b618731016d663a4ab75629d4d17b8868"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
   
