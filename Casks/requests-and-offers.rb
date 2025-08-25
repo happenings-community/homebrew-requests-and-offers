@@ -1,4 +1,5 @@
 cask "requests-and-offers" do
+  # v0.1.0-alpha.6 includes macOS native module fixes from August 25, 2025
   version "0.1.0-alpha.6"
   
   if Hardware::CPU.arm?
@@ -15,10 +16,28 @@ cask "requests-and-offers" do
 
   app "Requests and Offers.app"
 
-  # Auto-remove quarantine for better UX
+  # Auto-remove quarantine and fix native modules for better UX
   postflight do
+    # Remove quarantine
     system_command "/usr/bin/xattr",
                    args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/Requests and Offers.app"],
+                   sudo: false
+    
+    # Fix native module issue with better error handling
+    system_command "/bin/sh",
+                   args: ["-c", <<~EOS
+                     cd '#{appdir}/Requests and Offers.app/Contents/Resources' && \
+                     if [ ! -d 'app.asar.unpacked/node_modules/@holochain/hc-spin-rust-utils' ]; then \
+                       echo 'Installing missing native module...' && \
+                       mkdir -p app.asar.unpacked/node_modules/@holochain && \
+                       cd app.asar.unpacked && \
+                       npm install --no-save @holochain/hc-spin-rust-utils@0.500.0 && \
+                       echo 'Native module installation completed'; \
+                     else \
+                       echo 'Native module already present'; \
+                     fi
+                   EOS
+                   ],
                    sudo: false
   end
 
