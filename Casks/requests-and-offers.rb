@@ -1,6 +1,6 @@
 cask "requests-and-offers" do
   # v0.1.0-alpha.6 includes macOS native module fixes from August 25, 2025
-  version "0.1.0-alpha.6"
+  version "0.1.0-alpha.7"
   
   if Hardware::CPU.arm?
     sha256 "065e1e60b478a16520f9f4e517303cd07d775e5be71dae90abbb31db23f5ca6d"
