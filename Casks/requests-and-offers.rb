@@ -1,12 +1,12 @@
 cask "requests-and-offers" do
-  # v0.1.0-alpha.6 includes macOS native module fixes from August 25, 2025
+  # v0.1.0-alpha.7 with production bootstrap server (https://holostrap.elohim.host/)
   version "0.1.0-alpha.7"
   
   if Hardware::CPU.arm?
-    sha256 "3219b599b6f8636da742b01b714d49f6b8b6c8ae702876e88c9bdf6b394b048a"
+    sha256 "e67cb541a9164e09814b95b8aa2c19226ae00e229fad5ccdcf5e3a3b6cd45036"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "9fedeca157e6f6887cac5eb2dd863da2241b528f67a152c7faa5840eb6f50834"
+    sha256 "3e5da4b80fda136d89a811ed296886e68b1f2d13ecf6e494a0d39ddcf2e7f33b"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
   
