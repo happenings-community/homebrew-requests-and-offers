@@ -3,10 +3,10 @@ cask "requests-and-offers" do
   version "0.1.8"
   
   if Hardware::CPU.arm?
-    sha256 "801d9b58c88d657d07eb80a3cced5a64f80c596db5070e2e9818040ddab63b54"
+    sha256 "62aa2d88f706791a57d470a7a13d8e4df17844cbee76ceb9c1ded027c4e86b8a"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "a3f22c9d7969d4397d3a70e4af306cc55407de01021ec045c75bb48f8dfbfba1"
+    sha256 "b7b388178c2c6b09a00d2ff39ae0ad4a26db874ff89dab6d6672481172f708b8"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
   
