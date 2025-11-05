@@ -1,13 +1,13 @@
 cask "requests-and-offers" do
-  # v0.1.9 with native module bundling fix - no npm dependency required
-  version "0.1.9"
+  # v0.1.10 with development network enhancements and improved user experience
+  version "0.1.10"
 
   if Hardware::CPU.arm?
-    sha256 "d57d63bec6862f7ccad380e5bcc491e489f6ee5a00b0289d69272d0b50f1550a"
-    url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
+    sha256 "bf8aef2a3e2de736f8020def499c775511bd7dfbb6b18cb2489bd10bbb00ada8"
+    url "https://github.com/holochain-apps/kangaroo-electron/releases/download/v#{version}/Requests-and-Offers-#{version}-arm64.dmg"
   else
-    sha256 "b7a8e45181ce47072a0f45f6e3875ad808c2c6d03cc6b3d0f648f208a43911dd"
-    url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
+    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+    url "https://github.com/holochain-apps/kangaroo-electron/releases/download/v#{version}/Requests-and-Offers-#{version}-x64.dmg"
   end
 
   name "Requests and Offers"
