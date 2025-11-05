@@ -4,10 +4,10 @@ cask "requests-and-offers" do
 
   if Hardware::CPU.arm?
     sha256 "bf8aef2a3e2de736f8020def499c775511bd7dfbb6b18cb2489bd10bbb00ada8"
-    url "https://github.com/holochain-apps/kangaroo-electron/releases/download/v#{version}/Requests-and-Offers-#{version}-arm64.dmg"
+    url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
-    url "https://github.com/holochain-apps/kangaroo-electron/releases/download/v#{version}/Requests-and-Offers-#{version}-x64.dmg"
+    sha256 "a77d3c99ecdd4db5813d471d1fc90703eb6ca0dfe9ceb949fcc8634a899014df"
+    url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
 
   name "Requests and Offers"
