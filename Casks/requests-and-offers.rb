@@ -1,12 +1,12 @@
 cask "requests-and-offers" do
-  # v0.1.10 with development network enhancements and improved user experience
-  version "0.1.10"
+  # v0.2.0 - UI/UX Enhancement Release with improved responsiveness and administrative capabilities
+  version "0.2.0"
 
   if Hardware::CPU.arm?
-    sha256 "bf8aef2a3e2de736f8020def499c775511bd7dfbb6b18cb2489bd10bbb00ada8"
+    sha256 "33f7a9a2cd93f6dc076dfc734eb5e80587fc04c1ebb56f5608203ca61ce67ecb"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "a77d3c99ecdd4db5813d471d1fc90703eb6ca0dfe9ceb949fcc8634a899014df"
+    sha256 "f8aecf81f0ef753a10d70f78c052b5b8e4391a560f6524fe26b7dd67cff9ec46"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
 
