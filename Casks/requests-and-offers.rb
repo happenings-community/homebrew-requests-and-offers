@@ -1,12 +1,12 @@
 cask "requests-and-offers" do
-  # v0.2.2 - Holochain v0.6 Migration & Build Infrastructure Release
-  version "0.2.2"
+  # v0.2.3 - Development Features Enhancement Release
+  version "0.2.3"
 
   if Hardware::CPU.arm?
-    sha256 "9b5cde08c16b87c64421205f37b30c7b06a271bff113e84c6ca04d51b71ce50b"
+    sha256 "fe708d20c873cddd6abcbdaad29b2ee904457d429a4d4d33e4cc9b5f50968f4e"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "030c000e6dc45e91dcf1b799bf321b32d994336146c7a5508ac9cd73f7840067"
+    sha256 "d53f612b730d7af905c62fe938239f250059cb1e268ce28b8f16331fa55d8abd"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
 
