@@ -1,12 +1,12 @@
 cask "requests-and-offers" do
-  # v0.3.0 - Active/Archived Listings Management Release
-  version "0.3.0"
+  # v0.4.0 - Weave/Moss Integration & Markdown Support Release
+  version "0.4.0"
 
   if Hardware::CPU.arm?
-    sha256 "b063ba78b0d91d3f8773ce400c1b8072aa32fd25dfea00de0a9eecfe7b7b9bcf"
+    sha256 "e825aad0d69d576ec9601c58bdf31bed9730cc06814ebcff15e461e41c207514"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "9b74470ab072a0e04b0c112a4ed3c76d17c937cecda140ee71303747aca6e4d1"
+    sha256 "f9c7d67bb22fc3f517353d47d347d6ea5b76ef0a5cb200a12a6e805bd79da061"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
 
