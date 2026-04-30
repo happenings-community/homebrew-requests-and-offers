@@ -1,23 +1,12 @@
 cask "requests-and-offers" do
-<<<<<<< HEAD
-  # v0.5.1 - Active Link Management Patch
-  version "0.5.1"
+  # v0.5.2 - Patch Release — Organizations Fix & Desktop Update
+  version "0.5.2"
 
   if Hardware::CPU.arm?
-    sha256 "b1af6814f35243e69cab3a5abebbf7c9a911d29b3541192c5d85857b08b3a2ba"
+    sha256 "af788fcf02c015a4b199d7312ab2d64c2e67c5862418e2f12891b7a671cfb2c7"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "6b1bb90eb33778be592a96a5474cdb4387d637e754ac7f993fa94ce733c5bc70"
-=======
-  # v0.5.0 - Progenitor Pattern & Sweettest Testing Release
-  version "0.5.0"
-
-  if Hardware::CPU.arm?
-    sha256 "63765fa6489043b4a78fc7bcd98b9a97f4a8e56c004b0a525e9e4cb283128af7"
-    url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
-  else
-    sha256 "e6b9bbfb8d850c53e706ea9b503643124a4ad729b51766d99cc81942458650cf"
->>>>>>> dbf6d13 (v0.5.0: update formula with new release checksums)
+    sha256 "b917687c533c97fa19383308214bd5322b9c7579b57a6474b3986a0f7f6e16da"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
 
