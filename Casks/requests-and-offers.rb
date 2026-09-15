@@ -1,12 +1,12 @@
 cask "requests-and-offers" do
-  # v0.5.2 - Patch Release — Organizations Fix & Desktop Update
-  version "0.5.2"
+  # v0.6.0-alpha.1 - Alpha Baseline: exchange record, hREA integration, Holochain 0.6.1
+  version "0.6.0-alpha.1"
 
   if Hardware::CPU.arm?
-    sha256 "af788fcf02c015a4b199d7312ab2d64c2e67c5862418e2f12891b7a671cfb2c7"
+    sha256 "a191c38dba714a6549c70e9875b56a9690f1ba6ed2728b736677ce871fa0b2f0"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   else
-    sha256 "b917687c533c97fa19383308214bd5322b9c7579b57a6474b3986a0f7f6e16da"
+    sha256 "dc7753be6675f7cc398a2a6bf37f6dfe200cdaecc03f4d035fd48c80ddbf27f8"
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
 
