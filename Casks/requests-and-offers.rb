@@ -3,12 +3,12 @@ cask "requests-and-offers" do
   version "0.6.0-alpha.1"
 
   on_arm do
-    sha256 "a191c38dba714a6549c70e9875b56a9690f1ba6ed2728b736677ce871fa0b2f0"
+    sha256 "260a5ce1ff35ea7e1fd4baeb661f35bc17884c3fcf820705a8c3aa1ada3d401b"
 
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-arm64.dmg"
   end
   on_intel do
-    sha256 "dc7753be6675f7cc398a2a6bf37f6dfe200cdaecc03f4d035fd48c80ddbf27f8"
+    sha256 "a5557d17fdefe76b94e52a8e0f33ad2309728e350f61219f4a5f64ff8ca7ed44"
 
     url "https://github.com/happenings-community/requests-and-offers-kangaroo-electron/releases/download/v#{version}/requests-and-offers.happenings-community.kangaroo-electron-#{version}-x64.dmg"
   end
